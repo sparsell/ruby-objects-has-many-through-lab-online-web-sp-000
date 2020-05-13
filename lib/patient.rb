@@ -21,7 +21,7 @@ class Patient
 
 #returns all appointments associated with this Patient
   def appointments
-    Appointment.all.map {|appointment| appointment.patient}
+    Appointment.all.collect {|appointment| appointment.patient}
   end
 
 #has many doctors through appointments
