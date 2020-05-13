@@ -24,4 +24,9 @@ class Patient
     Appointment.all.select {|appointment| appointment.patient}
   end
 
+#has many doctors through appointments
+  def doctors
+    Appointment.all.map {|appointment| appointment.doctor}
+  end
+
 end
