@@ -13,4 +13,8 @@ def self.all
   @@all
 end
 
+def songs
+  self.all.select {|song| song.artist == self}
+end
+
 end
