@@ -19,4 +19,9 @@ class Patient
     Appointment.new(date, self, doctor)
   end
 
+#returns all appointments associated with this Patient
+  def appointments
+    Appointment.all.select {|appointment| appointment.patient}
+  end
+
 end
