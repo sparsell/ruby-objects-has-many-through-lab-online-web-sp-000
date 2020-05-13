@@ -19,7 +19,7 @@ class Genre
 
 #iterates through all songs and finds the songs that belong to that genre
   def songs
-
+    Song.all.select {|song| song.genre == self}
   end
 
 
