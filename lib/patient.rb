@@ -21,7 +21,7 @@ class Patient
 
 #returns all appointments associated with this Patient
   def appointments
-    Appointment.all.select {|appointment| appointment.patient}
+    Appointment.all.select {|appointment| appointment.patient.self}
   end
 
 #has many doctors through appointments
