@@ -22,7 +22,7 @@ class Artist
 
   end
 
-  def genre
+  def genres #has many genres, through songs
 
   end
 
