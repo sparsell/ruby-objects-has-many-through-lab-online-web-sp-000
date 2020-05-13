@@ -22,6 +22,8 @@ class Artist
   end
 
   def genres #has many genres, through songs
+    #iterates over that artist's songs and collects the genre of each song
+    Song.all.collect {|song| song.genre == self}
 
   end
 
