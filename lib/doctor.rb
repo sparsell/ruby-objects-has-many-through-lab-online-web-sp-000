@@ -15,7 +15,7 @@ class Doctor
 
   def appointments
     Appointment.all.collect {|appointment| appointment.doctor == self}
-    binding.pry
+
   end
 
 
