@@ -21,7 +21,7 @@ class Doctor
     Appointment.new(date, patient, self)
   end
 
-  def patients
-    Appointment.all.collect {|appointment| appointment.patient}
+  def patients #has many patients, through appointments
+    Appointment.all.map {|appointment| appointment.patient}
   end
 end
