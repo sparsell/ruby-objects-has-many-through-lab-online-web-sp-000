@@ -17,4 +17,12 @@ def songs
   self.all.select {|song| song.artist == self}
 end
 
+def new_song
+
+end
+
+def genre
+
+end
+
 end
